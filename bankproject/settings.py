@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'users',
     'accounts',
     'home',
-    'deposits'
-
+    'deposits',
+    'user_accounts'
 ]
 
 MIDDLEWARE = [
@@ -124,3 +124,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAI_USE_TLS = True
+EMAIL_HOST_USER = 'pavanik0441@gmail.com'
+EMAIL_HOST_PASSWORD = 'Sravan@21'
