@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'home',
     'deposits',
     'user_accounts'
+    
 ]
 
 MIDDLEWARE = [
@@ -127,7 +128,10 @@ STATIC_URL = 'static/'
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_PORT = 587
 EMAIL_HOST = 'smtp.gmail.com'
-EMAI_USE_TLS = True
+EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'pavanik0441@gmail.com'
 EMAIL_HOST_PASSWORD = 'Sravan@21'
+EMAIL_TIMEOUT = 10
+DEFAULT_FROM_EMAIL = 'pavanik0441@gmail.com'

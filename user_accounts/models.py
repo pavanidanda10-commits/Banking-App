@@ -5,7 +5,7 @@ from django.db import models
 class UserAccount(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
-    email = models.EmailField(unique=True, max_length=15,primary_key= True)
+    email = models.EmailField(unique=True, max_length=30,primary_key= True)
     password = models.CharField(max_length=30,)
     created_at = models.DateTimeField(auto_now_add=True)
 
